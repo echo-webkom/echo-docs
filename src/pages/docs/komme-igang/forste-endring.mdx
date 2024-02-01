@@ -5,13 +5,13 @@ import { Callout } from "nextra/components";
 For å gjøre en endring til koden må du først gjøre en kopi av koden til din egen maskin. Dette gjør du ved å bruke kommandoen `git clone`. Denne kommandoen tar en URL som argument, og lager en kopi av koden på din maskin.
 
 ```sh filename="Terminal"
-git clone git@github.com:echo-webkom/new-echo-web-monorepo
+git clone git@github.com:echo-webkom/echo-web-mono
 ```
 
 Så kan du gå inn i mappen som ble laget, og åpne den i din favoritt editor. Vi anbefaler å bruke [Visual Studio Code](https://code.visualstudio.com/).
 
 ```sh filename="Terminal"
-cd new-echo-web-monorepo
+cd echo-web-mono
 code .
 ```
 
@@ -38,7 +38,7 @@ pnpm db:up
 Etter du har startet databasen må du oppdatere tabellene i databasen.
 
 ```sh filename="Terminal"
-pnpm db:deploy
+pnpm db:migrate
 ```
 
 ## Starte koden
